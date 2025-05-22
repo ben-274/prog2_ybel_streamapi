@@ -22,7 +22,7 @@ public class Main {
         // Task III: Random
 
         // Task IV+V: Resources
-        System.out.println(resources("file.txt"));
+        System.out.println(resources("streamapi/file.txt"));
     }
 
     /**
@@ -74,7 +74,7 @@ public class Main {
      */
     private static InputStream getResourceAsStream(String path) {
         // TODO
-        throw new UnsupportedOperationException();
+        return Main.class.getClassLoader().getResourceAsStream(path);
     }
 
     /**
